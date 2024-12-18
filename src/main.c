@@ -1,3 +1,4 @@
+#include "area.h"
 #include <stdio.h>
 
 int main() {
@@ -43,8 +44,7 @@ int main() {
                 printf("\nFuncionalidade de potencia em desenvolvimento...\n");
                 break;
             case 7:
-                // Função para conversão de area
-                printf("\nFuncionalidade de area em desenvolvimento...\n");
+                executar_conversao_area();
                 break;
             case 8:
                 // Função para conversão de tempo

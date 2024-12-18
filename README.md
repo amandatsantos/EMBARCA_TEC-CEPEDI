@@ -61,6 +61,30 @@ Siga os passos abaixo para colaborar com este projeto:
 
 5. **Abra um Pull Request** no GitHub para integrar sua branch na branch principal.
 
+## Trabalhando com o Makefile
+Este projeto utiliza um **Makefile** para facilitar o processo de compilação e depuração. Aqui estão os comandos disponíveis:
+
+1. **Compilar o programa**:
+   ```bash
+   make
+   ```
+
+2. **Executar o programa**:
+   ```bash
+   make run
+   ```
+
+3. **Depurar o programa**:
+   Certifique-se de que o `gdb` está instalado e use o comando:
+   ```bash
+   make debug
+   ```
+
+4. **Limpar arquivos compilados**:
+   ```bash
+   make clean
+   ```
+
 ## Boas Práticas
 - Utilize mensagens de **commit claras e descritivas**;
 - Sempre crie uma **branch** para cada funcionalidade ou correção;
@@ -75,6 +99,3 @@ Bons commits e boa colaboração! 🛠️✨
 ---
 
 **Dúvidas ou Sugestões?** Entre em contato com o facilitador do projeto.
-
-
-

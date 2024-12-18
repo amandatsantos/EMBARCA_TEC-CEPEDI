@@ -46,7 +46,3 @@ void tempo()
         break;
     }
 }
-int main(){
-    tempo();
-    return 0;
-}

@@ -1,6 +1,6 @@
 #include "area.h"
 #include <stdio.h>
-#include "armazenamento_digital/armazenamento_digital.h"
+#include "armazenamento_digital.h"
 
 
 int main() {

@@ -57,10 +57,11 @@ int massa()
 
     // Cálculo da conversão
     int PotF = pot2 - pot1; // Diferença das potências
-    float resultado = nro * pow(10, PotF); // Cálculo final
+    float elev = pow(10, PotF);
+    float resultado = nro * elev; // Cálculo final
 
     // Saída do resultado
-    printf("A conversao de %.3f ", nro);
+    printf("A conversao de %f ", nro);
     switch (var1)
     {
     case 1: printf("gramas "); break;
@@ -74,7 +75,31 @@ int massa()
     case 2: printf("kilogramas "); break;
     case 3: printf("toneladas "); break;
     }
-    printf("eh: %.3f\n", resultado);
+    printf("eh: %f\n", resultado);
+
+    //Dica sobre conversão feita no programa
+    printf("Dica: para realizar a conversao de ");
+    switch (var1)
+    {
+    case 1: printf("metros "); break;
+    case 2: printf("centimetros "); break;
+    case 3: printf("milimetros "); break;
+    }
+    printf("para ");
+    switch (var2)
+    {
+    case 1: printf("metros "); break;
+    case 2: printf("centimetros "); break;
+    case 3: printf("milimetros "); break;
+    }
+    if(PotF > 0){
+        printf("multiplicar o numero por %.f",elev);
+    }
+    else if(PotF < 0){
+        int PotF2 = PotF * -1;
+        elev = pow(10, PotF2);
+        printf("dividir o numero por %.f",elev);
+    }
 
     return 0;
 }

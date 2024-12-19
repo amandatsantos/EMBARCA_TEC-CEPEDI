@@ -81,16 +81,16 @@ int massa()
     printf("Dica: para realizar a conversao de ");
     switch (var1)
     {
-    case 1: printf("metros "); break;
-    case 2: printf("centimetros "); break;
-    case 3: printf("milimetros "); break;
+    case 1: printf("gramas "); break;
+    case 2: printf("kilogramas "); break;
+    case 3: printf("toneladas "); break;
     }
     printf("para ");
     switch (var2)
     {
-    case 1: printf("metros "); break;
-    case 2: printf("centimetros "); break;
-    case 3: printf("milimetros "); break;
+    case 1: printf("gramas "); break;
+    case 2: printf("kilogramas "); break;
+    case 3: printf("toneladas "); break;
     }
     if(PotF > 0){
         printf("multiplicar o numero por %.f",elev);

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "armazenamento_digital/armazenamento_digital.h"
+
 
 int main() {
     int escolha;
@@ -13,6 +15,7 @@ int main() {
         printf("6 - Potencia\n");
         printf("7 - Área\n");
         printf("8 - Tempo\n");
+        printf("9 - Armazenamento Digital\n");
         printf("0 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -49,6 +52,10 @@ int main() {
             case 8:
                 // Função para conversão de tempo
                 printf("\nFuncionalidade de tempo em desenvolvimento...\n");
+                break;
+            case 9:
+                // Função para conversão de armazenamento digital
+                conversaoArmazenamentoDigital();
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

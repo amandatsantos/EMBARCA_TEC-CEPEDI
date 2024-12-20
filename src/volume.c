@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 // Funções para conversão entre as unidades
 double litroParaMililitro(double litros) {
@@ -41,9 +42,14 @@ void exibirMenu() {
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
-        if (opcao >= 1 && opcao <= 6) {
+         if (opcao >= 1 && opcao <= 6) {
             printf("Digite o valor a ser convertido: ");
-            scanf("%lf", &valor);
+            while (scanf("%lf", &valor) != 1) {
+                printf("Entrada Invalida. Por favor, insira um numero.\n");
+                while (getchar() != '\n'); // Limpa o buffer
+                printf("Digite o valor a ser convertido: ");
+          }
+
         }
 
         if (opcao == 1) {

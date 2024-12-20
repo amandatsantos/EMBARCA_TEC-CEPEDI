@@ -32,6 +32,10 @@ O repositório inicial será configurado com a seguinte estrutura:
 ```
 ├── README.md   # Descrição do projeto
 ├── src/        # Pasta para os arquivos-fonte do projeto
+├── include/    # Arquivos de cabeçalho do projeto
+├── build/      # Pasta para os arquivos compilados
+├── build.bat   # Script para compilar e executar no Windows
+├── build.sh    # Script para compilar e executar no Linux
 └── docs/       # Documentação complementar (opcional)
 ```
 
@@ -61,6 +65,29 @@ Siga os passos abaixo para colaborar com este projeto:
 
 5. **Abra um Pull Request** no GitHub para integrar sua branch na branch principal.
 
+## Trabalhando com Scripts de Compilação e Execução
+
+### **Para Usuários Windows**
+1. Abra o terminal na raiz do projeto.
+2. Execute o script `build.bat`:
+   ```cmd
+   build.bat
+   ```
+   - O script irá compilar todos os arquivos `.c` na pasta `src` e gerar o executável na pasta `build`.
+   - Após a compilação, o programa será executado automaticamente.
+
+### **Para Usuários Linux**
+1. Certifique-se de que o script `build.sh` está executável:
+   ```bash
+   chmod +x build.sh
+   ```
+2. Execute o script:
+   ```bash
+   ./build.sh
+   ```
+   - O script irá compilar todos os arquivos `.c` na pasta `src` e gerar o executável na pasta `build`.
+   - Após a compilação, o programa será executado automaticamente.
+
 ## Boas Práticas
 - Utilize mensagens de **commit claras e descritivas**;
 - Sempre crie uma **branch** para cada funcionalidade ou correção;
@@ -75,6 +102,3 @@ Bons commits e boa colaboração! 🛠️✨
 ---
 
 **Dúvidas ou Sugestões?** Entre em contato com o facilitador do projeto.
-
-
-

@@ -1,4 +1,6 @@
+#include "area.h"
 #include <stdio.h>
+#include "armazenamento_digital.h"
 #include "tempo.h"
 
 int main() {
@@ -14,6 +16,7 @@ int main() {
         printf("6 - Potencia\n");
         printf("7 - Área\n");
         printf("8 - Tempo\n");
+        printf("9 - Armazenamento Digital\n");
         printf("0 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -44,12 +47,15 @@ int main() {
                 printf("\nFuncionalidade de potencia em desenvolvimento...\n");
                 break;
             case 7:
-                // Função para conversão de area
-                printf("\nFuncionalidade de area em desenvolvimento...\n");
+                executar_conversao_area();
                 break;
             case 8:
                 // Função para conversão de tempo
                 tempo();
+                break;
+            case 9:
+                // Função para conversão de armazenamento digital
+                conversaoArmazenamentoDigital();
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

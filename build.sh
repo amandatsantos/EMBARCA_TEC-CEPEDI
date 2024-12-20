@@ -14,8 +14,8 @@ fi
 # Monta a lista de arquivos .c na pasta src
 FILES=$(find "$SRC_DIR" -name "*.c")
 
-# Compila o projeto com todos os arquivos .c encontrados
-gcc -I"$INCLUDE_DIR" -Wall -Wextra -g3 $FILES -o "$OUTPUT"
+# Compila o projeto com todos os arquivos .c encontrados, incluindo a biblioteca matemática
+gcc -I"$INCLUDE_DIR" -Wall -Wextra -g3 $FILES -lm -o "$OUTPUT"
 if [ $? -ne 0 ]; then
     echo "Erro ao compilar o projeto."
     exit 1

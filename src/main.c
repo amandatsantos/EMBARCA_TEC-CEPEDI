@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "tempo.h"
 
 int main() {
     int escolha;
@@ -48,7 +49,7 @@ int main() {
                 break;
             case 8:
                 // Função para conversão de tempo
-                printf("\nFuncionalidade de tempo em desenvolvimento...\n");
+                tempo();
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

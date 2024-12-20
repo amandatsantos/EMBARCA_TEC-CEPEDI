@@ -1,7 +1,7 @@
 #include "area.h"
 #include <stdio.h>
 #include "armazenamento_digital.h"
-
+#include "tempo.h"
 
 int main() {
     int escolha;
@@ -51,7 +51,7 @@ int main() {
                 break;
             case 8:
                 // Função para conversão de tempo
-                printf("\nFuncionalidade de tempo em desenvolvimento...\n");
+                tempo();
                 break;
             case 9:
                 // Função para conversão de armazenamento digital

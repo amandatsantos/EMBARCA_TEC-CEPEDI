@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "armazenamento_digital.h"
 #include "tempo.h"
+#include "comprimento.h"
+#include "massa.h"
 
 int main() {
     int escolha;
@@ -24,11 +26,11 @@ int main() {
         switch (escolha) {
             case 1:
                 // Função para conversão de comprimento
-                printf("\nFuncionalidade de comprimento em desenvolvimento...\n");
+                comprimento();
                 break;
             case 2:
                 // Função para conversão de massa
-                printf("\nFuncionalidade de massa em desenvolvimento...\n");
+                massa();
                 break;
             case 3:
                 // Função para conversão de volume

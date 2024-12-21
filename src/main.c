@@ -1,6 +1,7 @@
 #include "area.h"
 #include <stdio.h>
 #include "armazenamento_digital.h"
+#include "volume.h"
 #include "tempo.h"
 #include "comprimento.h"
 #include "massa.h"
@@ -34,7 +35,7 @@ int main() {
                 break;
             case 3:
                 // Função para conversão de volume
-                printf("\nFuncionalidade de volume em desenvolvimento...\n");
+                 exibirMenu();
                 break;
             case 4:
                 // Função para conversão de temperatura

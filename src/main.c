@@ -5,6 +5,7 @@
 #include "tempo.h"
 #include "comprimento.h"
 #include "massa.h"
+#include "potencia.h"
 
 int main() {
     int escolha;
@@ -47,7 +48,7 @@ int main() {
                 break;
             case 6:
                 // Função para conversão de potencia
-                printf("\nFuncionalidade de potencia em desenvolvimento...\n");
+                potencia();
                 break;
             case 7:
                 executar_conversao_area();

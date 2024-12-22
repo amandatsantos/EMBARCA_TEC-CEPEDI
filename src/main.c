@@ -1,3 +1,4 @@
+#include "velocidade.h"
 #include <stdio.h>
 
 int main() {
@@ -13,6 +14,7 @@ int main() {
         printf("6 - Potencia\n");
         printf("7 - Área\n");
         printf("8 - Tempo\n");
+        printf("9 - Armazenamento Digital\n");
         printf("0 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -36,19 +38,22 @@ int main() {
                 break;
             case 5:
                 // Função para conversão de velocidade
-                printf("\nFuncionalidade de velocidade em desenvolvimento...\n");
+                execucao_da_solicitacao_de_conversao();
                 break;
             case 6:
                 // Função para conversão de potencia
                 printf("\nFuncionalidade de potencia em desenvolvimento...\n");
                 break;
             case 7:
-                // Função para conversão de area
-                printf("\nFuncionalidade de area em desenvolvimento...\n");
+                printf("\nFuncionalidade de área em desenvolvimento...\n");
                 break;
             case 8:
                 // Função para conversão de tempo
                 printf("\nFuncionalidade de tempo em desenvolvimento...\n");
+                break;
+            case 9:
+                // Função para conversão de armazenamento digital
+                printf("\nFuncionalidade de armazenamento digital em desenvolvimento...\n");
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

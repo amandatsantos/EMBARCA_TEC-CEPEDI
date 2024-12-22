@@ -52,7 +52,7 @@ int main() {
                 potencia();
                 break;
             case 7:
-                printf("\nFuncionalidade de área em desenvolvimento...\n");
+                executar_conversao_area();
                 break;
             case 8:
                 // Função para conversão de tempo
@@ -60,7 +60,7 @@ int main() {
                 break;
             case 9:
                 // Função para conversão de armazenamento digital
-                printf("\nFuncionalidade de armazenamento digital em desenvolvimento...\n");
+                conversaoArmazenamentoDigital();
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

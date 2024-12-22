@@ -4,12 +4,6 @@ mph = km_h * 0.621371*/
 #include "velocidade.h"
 #include <stdio.h>
 
-int main(){
-    printf("m/s = %.2f", min_segundos(5));
-    printf("\nkm/h = %.2f", km_horas(10));
-    printf("\nmph = %.2f", milhas_horas(36));
-    execucao_da_solicitacao_de_conversao();
-}
 static double min_segundos (double km_h){
     double m_s = km_h / 3.6;
     return m_s;

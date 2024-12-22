@@ -61,7 +61,7 @@ int massa()
     float resultado = nro * elev; // Cálculo final
 
     // Saída do resultado
-    printf("A conversao de %f ", nro);
+    printf("A conversao de %.3f ", nro);
     switch (var1)
     {
     case 1: printf("gramas "); break;

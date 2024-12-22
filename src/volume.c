@@ -78,3 +78,7 @@ void exibirMenu() {
 
     } while (opcao != 7);
 }
+int main() {
+    exibirMenu();
+    return 0;
+}

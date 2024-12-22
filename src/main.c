@@ -1,5 +1,6 @@
-#include "area.h"
 #include <stdio.h>
+#include "area.h"
+#include "velocidade.h"
 #include "armazenamento_digital.h"
 #include "volume.h"
 #include "tempo.h"
@@ -44,14 +45,14 @@ int main() {
                 break;
             case 5:
                 // Função para conversão de velocidade
-                printf("\nFuncionalidade de velocidade em desenvolvimento...\n");
+                execucao_da_solicitacao_de_conversao();
                 break;
             case 6:
                 // Função para conversão de potencia
                 potencia();
                 break;
             case 7:
-                executar_conversao_area();
+                printf("\nFuncionalidade de área em desenvolvimento...\n");
                 break;
             case 8:
                 // Função para conversão de tempo
@@ -59,7 +60,7 @@ int main() {
                 break;
             case 9:
                 // Função para conversão de armazenamento digital
-                conversaoArmazenamentoDigital();
+                printf("\nFuncionalidade de armazenamento digital em desenvolvimento...\n");
                 break;
             case 0:
                 printf("\nSaindo do programa...\n");

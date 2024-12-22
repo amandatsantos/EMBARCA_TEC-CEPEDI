@@ -1,5 +1,12 @@
-#include "velocidade.h"
 #include <stdio.h>
+#include "area.h"
+#include "velocidade.h"
+#include "armazenamento_digital.h"
+#include "volume.h"
+#include "tempo.h"
+#include "comprimento.h"
+#include "massa.h"
+#include "potencia.h"
 
 int main() {
     int escolha;
@@ -22,15 +29,15 @@ int main() {
         switch (escolha) {
             case 1:
                 // Função para conversão de comprimento
-                printf("\nFuncionalidade de comprimento em desenvolvimento...\n");
+                comprimento();
                 break;
             case 2:
                 // Função para conversão de massa
-                printf("\nFuncionalidade de massa em desenvolvimento...\n");
+                massa();
                 break;
             case 3:
                 // Função para conversão de volume
-                printf("\nFuncionalidade de volume em desenvolvimento...\n");
+                 exibirMenu();
                 break;
             case 4:
                 // Função para conversão de temperatura
@@ -42,14 +49,14 @@ int main() {
                 break;
             case 6:
                 // Função para conversão de potencia
-                printf("\nFuncionalidade de potencia em desenvolvimento...\n");
+                potencia();
                 break;
             case 7:
                 printf("\nFuncionalidade de área em desenvolvimento...\n");
                 break;
             case 8:
                 // Função para conversão de tempo
-                printf("\nFuncionalidade de tempo em desenvolvimento...\n");
+                tempo();
                 break;
             case 9:
                 // Função para conversão de armazenamento digital

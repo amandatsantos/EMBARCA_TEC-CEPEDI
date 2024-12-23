@@ -3,7 +3,7 @@
 //Conversões entre: Watts (W), quilowatts (kW), cavalos-vapor (CV ou HP).
 //Arquivo: potencia.c
 
-int potencia() {
+void potencia() {
     float watts = 0, kilowatts = 0, cavaloVapor = 0;
     int opcao = 0;
 
@@ -49,6 +49,6 @@ int potencia() {
         //Caso o usuario escolha uma opcao invalida
         default:
         printf("Escolha uma opcao valida!\n");
-        return 0;
+        break;
     }
 }

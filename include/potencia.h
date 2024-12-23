@@ -2,6 +2,6 @@
 #define POTENCIA_H
 
 //Declaração da função potência
-int potencia();
+void potencia();
 
 #endif //POTENCIA_H

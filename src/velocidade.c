@@ -31,7 +31,7 @@ void execucao_da_solicitacao_de_conversao() {
         printf("1 - Converter km/h para m/s\n");
         printf("2 - Converter m/s para km/h\n");
         printf("3 - Converter km/h para mph\n");
-        printf("0 - Sair");
+        printf("0 - Sair\n");
         printf("Opção: ");
         scanf("%d", &opcao);
 

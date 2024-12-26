@@ -2,7 +2,19 @@
 
 # Repositório Colaborativo - Prática de Git e GitHub
 
-*** seguir o pdf  14.37M2 U3C3O12T - tarefa ***
+
+
+# colaboradores 
+
+- [brunaalvescabral - Bruna Alves Cabral ](https://github.com/brunaalvescabral)
+- [iagovirgilio - Iago Virgílio Lopes Macedo de Oliveira](https://github.com/iagovirgilio)
+- [ribeiro51 - Lucas Borges Ribeiro](https://github.com/ribeiro51)
+- [PauloCesar53 - Paulo César de Jesus Di Lauro ](https://github.com/PauloCesar53)
+- [marques-svnt - Gabriel Marques de Andrade ](https://github.com/Marques-svnt)
+- [ArieldosSantosdeCristo -Ariel dos Santos de Cristo Góes ](https://github.com/ArieldosSantosdeCristo)
+- [Ma756-max - Marcelo Rick Almeida Santos](https://github.com/Ma756-max)
+- [amandatsantos - Amanda Tavares Santos](https://github.com/amandatsantos)
+
 
 ## Objetivo
 Este repositório foi criado para auxiliar na assimilação dos conceitos iniciais de **versionamento de código** utilizando **Git** e **GitHub**. O principal foco é o desenvolvimento de habilidades práticas em:

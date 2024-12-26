@@ -1,8 +1,36 @@
-#include "area.h"
 #include <stdio.h>
+#include <stdbool.h>
+#include "area.h"
+#include "velocidade.h"
 #include "armazenamento_digital.h"
+#include "volume.h"
 #include "tempo.h"
 #include "temperatura.h"
+#include "comprimento.h"
+#include "massa.h"
+#include "potencia.h"
+
+int le_int(char mensagem[])
+{
+    int a = 0;
+    do
+    {
+        puts(mensagem);
+        if (scanf("%d", &a)){
+            return a;
+        }
+        puts("Erro ao ler número. Redigite.");
+
+        // Limpeza de buffer
+        int lido = 0;
+        do
+        {
+            lido = getchar();
+        } while (lido != '\n' && lido != EOF);
+    } while (true);
+}
+
+
 int main() {
     int escolha;
 
@@ -18,21 +46,20 @@ int main() {
         printf("8 - Tempo\n");
         printf("9 - Armazenamento Digital\n");
         printf("0 - Sair\n");
-        printf("Escolha uma opção: ");
-        scanf("%d", &escolha);
+        escolha = le_int("Escolha uma opção: ");
 
         switch (escolha) {
             case 1:
                 // Função para conversão de comprimento
-                printf("\nFuncionalidade de comprimento em desenvolvimento...\n");
+                comprimento();
                 break;
             case 2:
                 // Função para conversão de massa
-                printf("\nFuncionalidade de massa em desenvolvimento...\n");
+                massa();
                 break;
             case 3:
                 // Função para conversão de volume
-                printf("\nFuncionalidade de volume em desenvolvimento...\n");
+                 exibirMenu();
                 break;
             case 4:
                 // Função para conversão de temperatura
@@ -41,11 +68,11 @@ int main() {
                 break;
             case 5:
                 // Função para conversão de velocidade
-                printf("\nFuncionalidade de velocidade em desenvolvimento...\n");
+                execucao_da_solicitacao_de_conversao();
                 break;
             case 6:
                 // Função para conversão de potencia
-                printf("\nFuncionalidade de potencia em desenvolvimento...\n");
+                potencia();
                 break;
             case 7:
                 executar_conversao_area();

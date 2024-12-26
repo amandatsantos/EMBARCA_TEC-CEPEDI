@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
-int comprimento()
+int massa()
 {
     int var1, var2, pot1, pot2;
     float nro;
 
     // Entrada de dados
-    printf("1 - metro\n2 - centimetro\n3 - milimetro\n");
+    printf("1 - grama\n2 - kilograma\n3 - tonelada\n");
     printf("Escreva o numero correspondente a unidade de medida original: ");
     scanf("%i", &var1);
 
@@ -18,17 +18,17 @@ int comprimento()
     scanf("%f", &nro); 
 
     // Definição dos potências para a unidade de medida original
-    if (var1 == 1) // Metro
+    if (var1 == 1) // Grama
     {
-        pot1 = 0;
+        pot1 = 6;
     }
-    else if (var1 == 2) // Centímetro
-    {
-        pot1 = 2;
-    }
-    else if (var1 == 3) // Milímetro
+    else if (var1 == 2) // Kilograma
     {
         pot1 = 3;
+    }
+    else if (var1 == 3) // Tonelada
+    {
+        pot1 = 0;
     }
     else
     {
@@ -37,21 +37,21 @@ int comprimento()
     }
 
     // Definição dos potências para a unidade de medida convertida
-    if (var2 == 1) // Metro
+    if (var2 == 1) // Grama
     {
-        pot2 = 0;
+        pot2 = 6;
     }
-    else if (var2 == 2) // Centímetro
-    {
-        pot2 = 2;
-    }
-    else if (var2 == 3) // Milímetro
+    else if (var2 == 2) // Kilograma
     {
         pot2 = 3;
     }
+    else if (var2 == 3) // Tonelada
+    {
+        pot2 = 0;
+    }
     else
     {
-        printf("Unidade de conversão invalida!\n");
+        printf("Unidade de conversao invalida!\n");
         return 1; // Encerra o programa com erro
     }
 
@@ -61,19 +61,19 @@ int comprimento()
     float resultado = nro * elev; // Cálculo final
 
     // Saída do resultado
-    printf("A conversao de %f ", nro);
+    printf("A conversao de %.3f ", nro);
     switch (var1)
     {
-    case 1: printf("metros "); break;
-    case 2: printf("centimetros "); break;
-    case 3: printf("milimetros "); break;
+    case 1: printf("gramas "); break;
+    case 2: printf("kilogramas "); break;
+    case 3: printf("toneladas "); break;
     }
     printf("para ");
     switch (var2)
     {
-    case 1: printf("metros "); break;
-    case 2: printf("centimetros "); break;
-    case 3: printf("milimetros "); break;
+    case 1: printf("gramas "); break;
+    case 2: printf("kilogramas "); break;
+    case 3: printf("toneladas "); break;
     }
     printf("eh: %f\n", resultado);
 
@@ -100,5 +100,6 @@ int comprimento()
         elev = pow(10, PotF2);
         printf("dividir o numero por %.f",elev);
     }
+
     return 0;
 }

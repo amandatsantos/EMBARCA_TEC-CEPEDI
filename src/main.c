@@ -72,7 +72,7 @@ int main() {
                 break;
             case 6:
                 // Função para conversão de potencia
-                potencia();
+                converterPotencia();
                 break;
             case 7:
                 executar_conversao_area();

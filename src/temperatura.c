@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include"temperatura.h"
+#include "temperatura.h"
 
 // Funções de conversão
 double celsiusParaFahrenheit(double celsius) {
@@ -240,9 +240,4 @@ void converterTemperatura() {
                 printf("Opção inválida. Tente novamente.\n");
         }
     } while (opcao != 0); // Continua até o usuário escolher sair
-}
-
-int main() {
-    converterTemperatura();
-    return 0;
-}
+} 

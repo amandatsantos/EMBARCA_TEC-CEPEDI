@@ -34,6 +34,12 @@ Os participantes irão configurar um **projeto simples** dentro deste repositór
 
 experimentação de um **fluxo de trabalho colaborativo**
 
+# requisitos 
+
+* **Sistema operacional:** Windows/linux
+* **Compilador:** GCC 13.2.0 ou superior 
+
+
 ## Ferramentas Utilizadas
 - **Git**: Sistema de controle de versão distribuído.
 - **GitHub**: Plataforma de hospedagem e compartilhamento de repositórios Git.

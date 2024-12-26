@@ -240,4 +240,4 @@ void converterTemperatura() {
                 printf("Opção inválida. Tente novamente.\n");
         }
     } while (opcao != 0); // Continua até o usuário escolher sair
-}
+} 

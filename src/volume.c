@@ -78,7 +78,7 @@ void exibirMenu() {
 
     } while (opcao != 7);
 }
-int main() {
+int test_volume() {
     exibirMenu();
     return 0;
 }

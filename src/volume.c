@@ -32,12 +32,12 @@ void exibirMenu() {
 
     do {
         printf("\nConversor de Unidades de Volume\n");
-        printf("1. Litro para Mililitro\n");
-        printf("2. Litro para Metro Cubico\n");
-        printf("3. Mililitro para Litro\n");
-        printf("4. Mililitro para Metro Cubico\n");
-        printf("5. Metro Cubico para Litro\n");
-        printf("6. Metro Cubico para Mililitro\n");
+        printf("1. Litro para Mililitro (Exemplo: 1 litro = 1000 mililitros)\n");
+        printf("2. Litro para Metro Cubico (Exemplo: 1 litro = 0.001 metros cúbicos)\n");
+        printf("3. Mililitro para Litro (Exemplo: 1000 mililitros = 1 litro)\n");
+        printf("4. Mililitro para Metro Cubico (Exemplo: 1 mililitro = 0.000001 metros cúbicos)\n");
+        printf("5. Metro Cubico para Litro (Exemplo: 1 metro cúbico = 1000 litros)\n");
+        printf("6. Metro Cubico para Mililitro (Exemplo: 1 metro cúbico = 1.000.000 mililitros)\n");
         printf("7. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -77,4 +77,8 @@ void exibirMenu() {
         }
 
     } while (opcao != 7);
+}
+int test_volume() {
+    exibirMenu();
+    return 0;
 }

@@ -1,12 +1,35 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include "area.h"
 #include "velocidade.h"
 #include "armazenamento_digital.h"
 #include "volume.h"
 #include "tempo.h"
+#include "temperatura.h"
 #include "comprimento.h"
 #include "massa.h"
 #include "potencia.h"
+
+int le_int(char mensagem[])
+{
+    int a = 0;
+    do
+    {
+        puts(mensagem);
+        if (scanf("%d", &a)){
+            return a;
+        }
+        puts("Erro ao ler número. Redigite.");
+
+        // Limpeza de buffer
+        int lido = 0;
+        do
+        {
+            lido = getchar();
+        } while (lido != '\n' && lido != EOF);
+    } while (true);
+}
+
 
 int main() {
     int escolha;
@@ -23,8 +46,7 @@ int main() {
         printf("8 - Tempo\n");
         printf("9 - Armazenamento Digital\n");
         printf("0 - Sair\n");
-        printf("Escolha uma opção: ");
-        scanf("%d", &escolha);
+        escolha = le_int("Escolha uma opção: ");
 
         switch (escolha) {
             case 1:
@@ -41,7 +63,8 @@ int main() {
                 break;
             case 4:
                 // Função para conversão de temperatura
-                printf("\nFuncionalidade de temperatura em desenvolvimento...\n");
+                // Chamada da funcionalidade de temperatura
+                converterTemperatura();
                 break;
             case 5:
                 // Função para conversão de velocidade

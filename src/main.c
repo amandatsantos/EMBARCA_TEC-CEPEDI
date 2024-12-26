@@ -5,6 +5,7 @@
 #include "armazenamento_digital.h"
 #include "volume.h"
 #include "tempo.h"
+#include "temperatura.h"
 #include "comprimento.h"
 #include "massa.h"
 #include "potencia.h"
@@ -62,7 +63,8 @@ int main() {
                 break;
             case 4:
                 // Função para conversão de temperatura
-                printf("\nFuncionalidade de temperatura em desenvolvimento...\n");
+                // Chamada da funcionalidade de temperatura
+                converterTemperatura();
                 break;
             case 5:
                 // Função para conversão de velocidade
